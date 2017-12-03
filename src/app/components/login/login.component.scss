@@ -1,0 +1,41 @@
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    // background image
+    background: url(~/assets/login-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .center {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .example-card mat-card-actions {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .form-login {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .example-container {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .example-container > * {
+        width: 100%;
+      }
+
+      #reset {
+          float: right;
+      }
+}

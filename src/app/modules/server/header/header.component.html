@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+  <a mat-button *ngFor="let route of routes" routerLinkActive="mat-elevation-z2" [routerLink]="route.path"> {{ route.label }} </a>
+  <div class="flex-spacer"></div>
+  <a mat-raised-button color="accent" [routerLink]="'/login'">LOG OUT</a>
+</mat-toolbar>

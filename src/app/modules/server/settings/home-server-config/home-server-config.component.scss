@@ -1,0 +1,26 @@
+:host {
+    .secondary-text {
+        font-size: 14px !important;
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .save-container {
+        align-items: end;
+        display: flex;
+        flex-direction: row-reverse;
+        direction: ltr;
+        grid-template-columns: repeat(auto-fill, 33%);
+
+        button {
+            position: static;
+            width: auto;
+            height: auto;
+
+            margin: 16px 16px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/* Fonts */
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$typography: mat-typography-config(
+    $font-family: 'Roboto, monospace',
+    $headline: mat-typography-level(32px, 48px, 700),
+    $body-1: mat-typography-level(16px, 24px, 300)
+);
+
+// always include only once per project
+@include mat-core($typography);

@@ -1,0 +1,33 @@
+<div class="center">
+   
+    <div class="form-login">
+        <mat-toolbar  color="primary">
+            <span>Login</span>
+          </mat-toolbar>
+
+          <mat-card class="example-card">
+              <mat-card-header>
+          
+               <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+              </mat-card-header>
+              <mat-card-content>
+                  <form class="example-container">
+                      <mat-form-field>
+                          <input matInput placeholder="Enter your email" required>
+                        </mat-form-field>
+                    
+                      <mat-form-field>
+                          <input matInput placeholder="Enter your password" [type]="show ? 'text' : 'password'">
+                          <mat-icon matSuffix (click)="show = !show">{{show ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </mat-form-field>              
+                    </form>
+              </mat-card-content>
+              <mat-card-actions>
+                <a mat-raised-button color="accent" [routerLink]="'/server'">LOG IN</a>
+               <!-- <div class="flex-spacer"></div> -->
+                <a id="reset" mat-button [routerLink]="'/reset-password'">Forgot password</a>
+              </mat-card-actions>
+            </mat-card>
+    </div>
+
+</div>

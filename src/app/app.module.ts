@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { AppRoutesModule, routedComponents } from './app.routes';
+import { PromotingModule } from 'modules/promoting/promoting.module';
+import { ComponentsModule } from 'components/components.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routedComponents
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutesModule,
+    BrowserAnimationsModule,
+    PromotingModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
